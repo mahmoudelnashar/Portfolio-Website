@@ -3,7 +3,7 @@
   font-family: "Titles";
 
   /* Light Theme */
-  --bg-navbar-light: #f8f9fa;
+  --bg-navbar-light: #f8f9fa; /*#f8f9fa*/
   --text-navbar-light: #282c34;
   --hover-navbar-light: rgba(0, 0, 0, 0.1);
   --logo-filter-light: brightness(0);
@@ -16,7 +16,7 @@
   --text-navbar-dark: white;
   --hover-navbar-dark: rgba(255, 255, 255, 0.2);
   --logo-filter-dark: brightness(0) invert(1);
-  --background-primary-dark: #1a1a1a;
+  --background-primary-dark: #282c34;
   --background-secondary-dark: #333;
   --text-dark: white;
 }
@@ -63,6 +63,8 @@ body {
   min-height: 100vh;
   text-align: center;
   transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* Navbar */
@@ -182,3 +184,99 @@ h1, h3, p {
   color: #888;
 }
 
+
+/* Experience Section */
+.experience-container {
+  margin-top: 50px;
+  padding-top: 90px;
+  background-color: var(--background-secondary);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  padding-top: 90px;
+  background-color: var(--background-primary);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 80vw;
+  height: auto;
+
+}
+
+.experience-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.experience-card-upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ensures items align properly */
+  width: 100%;
+}
+
+
+
+.experience-card-upper > * {
+  flex: 1; 
+  text-align: center; 
+}
+
+.experience-card-upper > *:first-child {
+  text-align: left; 
+  margin-right: 10px;
+}
+
+.experience-card-upper > *:last-child {
+  text-align: right;
+}
+
+
+button {
+  bottom: 15px;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--background-secondary);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+button a{
+
+    text-decoration: none; 
+    color: inherit; 
+
+}
+
+
+
+.media{
+  padding-top: 5px;
+}
